@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Roboto Mono", monospace; */
+    font-family: "Open Sans", sans-serif;;
+}
+
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 700
+
+/* .roboto-mono-<uniquifier> {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+#nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+#nav h4{
+    font-size: 16px;
+}
+#nav i{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#center{
+    height: 40%;
+    width: 100%;
+}
+
+#center h1{
+    font-size: 65px;
+    font-weight: 400;
+    padding-left: 80px;
+    line-height: 80px;
+    word-spacing: -2px;
+}
+
+#center-in{
+    height: 200px;
+    width: 100%;
+    padding: 0 80px;
+    margin-top: 20px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+#center-in p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#right{
+    width: 20%;
+    /* background-color: yellow; */
+}
+#center-in #elem{
+    padding: 15px 0;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#elem a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+#elem i{
+    font-size: 20px;
+    opacity: 0;
+}
+
+#elem:hover i{
+    opacity: 1;
+}
+#elem a:hover{
+    text-decoration: underline;
+}
+
+#bottom {
+    min-height: 45vh; /* Ensures the div has a minimum height */
+    width: 100%;
+    background-image: url('https://media.istockphoto.com/id/1314489419/photo/beautiful-girl-with-curly-hairstyle.jpg?s=1024x1024&w=is&k=20&c=_x9w259HdjHKwNB3elYQcMf2QcZ61yCLVAIaPsMKf7Y=');
+    background-size: cover;
+    background-position: center;
+
+}
