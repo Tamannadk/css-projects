@@ -40,7 +40,30 @@ html,body{
     font-family: "Black Han Sans", sans-serif;
     font-size:40px ;
     letter-spacing: -1px;
+    position: relative;
 }
+
+#nav h1::after{
+    content:"©️";
+    font-weight: 400;
+    font-size: 22px;
+    position: absolute;
+    top: 22%;
+    right: 15.5%;
+}
+
+#nav h1::before{
+    content:"model management";
+    font-weight: 400;
+    font-family: "Roboto Mono", monospace;
+    font-size: 13px;
+    position: absolute;
+    bottom: 14%;
+    color: #666;
+    right: 18%;
+    letter-spacing: 0.1px;
+}
+
 #nav h2{
     /* background-color: blue; */
     height: 100%;
@@ -301,4 +324,196 @@ html,body{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+#page5{
+    height: 100%;
+    width: 100%;
+    padding: 5vw 4vw;
+    position: relative;
+}
+#page5>h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 3vw;
+    font-weight: 300;
+    margin-bottom: 7vh;
+}
+
+.elem{
+    height: 17vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    position: relative;
+}
+
+.elem img{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    left: 15%;
+    opacity: 0;
+    transition: all ease 0.8s;
+}
+
+.elem:nth-last-child(1){
+ border-bottom: 2px solid #000;
+}
+
+.elem h4{
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    /* background-color: red; */
+    width: 6%;
+    font-weight: 500;
+}
+
+.elem #elem-part2 {
+   /* background-color: red; */
+   width: 45%;
+}
+
+.elem #elem-part2 h1{
+    font-size: 2.7vw;
+    font-weight: 500;
+    letter-spacing: -0.1vw;
+    word-spacing: -0.7vw;
+}
+.elem #elem-part2 h5{
+    text-transform: uppercase;
+    font-size: 0.8vw;
+    font-weight: 600;
+}
+
+.elem:hover img{
+    opacity: 1;
+    left: 24%;
+}
+
+#marque{
+    /* height: 15vh; */
+    width: 100%;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0.8vw;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    margin-top: 5vh;
+    margin-bottom: 7vh;
+}
+
+#marque h1{
+    display: inline-block;
+    /* background-color: blue; */
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 800;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-family: "Black Han Sans", sans-serif;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-right: 16px;
+    letter-spacing: 3px;
+}
+
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 22px));
+    }
+}
+
+#footer{
+    height: 35%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 1vw;
+}
+
+#nav-in-footer{
+    height: 100%;
+    width: 100%;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#nav-in-footer h1{
+    padding-top: 2vw;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    /* background-color: blueviolet; */
+    font-size: 3vw;
+    font-family: "Black Han Sans", sans-serif;
+}
+#nav-in-footer h2{
+    padding: 2vw;
+    height: 100%;
+    width: 37%;
+    display: flex;
+    /* align-items: center; */
+    /* background-color: yellow; */
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size: 22px;
+}
+
+
+
+#nav-in-footer h2:nth-last-child(2)
+{
+    width: 20%;
+}
+#nav-in-footer h2:nth-last-child(3)
+{
+    width: 20%;
+}
+
+#footer-part3
+{
+    /* background-color: green; */
+    height: 100%;
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+}
+#footer-part3 h3{
+    padding: 2vw 2vw;
+    height: 40%;
+    border-bottom:2px solid #000 ;
+    font-size: 20px;
+}
+#footer-part3 .Copyright{
+ /* background-color: yellow; */
+ padding: 1vw 2vw;
+ height: 60%;
+ width: 100%;
+}
+#footer-part3 #icons{
+    font-size: 2vw;
+    padding-bottom: 1vw;
+}
+
+#footer-part3 .Copyright h4{
+    letter-spacing: 0.6px;
 }
